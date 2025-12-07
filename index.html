@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Erick Ramírez Portafolio</title>
 	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="./css/izmir.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 	<link href="./css/vertical-timeline.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -24,6 +25,8 @@
 					<div class="bg"></div>
 					<li><a class="nav-link active" href="#home">Inicio</a></li>
 					<li><a class="nav-link" href="#about">Sobre mí</a></li>
+					<!-- <li><a class="nav-link" href="#courses">Cursos</a></li>
+					<li><a class="nav-link" href="#knowledge">Conocimientos</a></li> -->
 					<li><a class="nav-link" href="#habilities">Habilidades</a></li>
 					<li><a class="nav-link" href="#projects">Proyectos</a></li>
 					<li><a class="nav-link" href="#contact">Contacto</a></li>
@@ -44,20 +47,28 @@
 					<div>
 						<h3>Erick Ramírez</h3>
 					</div>
-					<img class="imgPerfil" src="./img/foto.png" style="width: 200px;height: auto;border-radius: 50%;"/><br><br>
-					<hr >
-					<p >Ingeniero de Software 🧑🏻‍💻 </p>
-					<p >Actualmente me encuentro aprendiendo desarrollo web Front-End,
+					<img class="imgPerfil" src="./img/foto.png"
+						style="width: 200px;height: auto;border-radius: 50%;" /><br><br>
+					<hr>
+					<h4>Ingeniero de Software 🧑🏻‍💻 </h4>
+					<p>Actualmente me encuentro aprendiendo desarrollo web Front-End,
 						UX y UI</p>
 
 					<!--────REDES SOCIALES─────-->
 
 					<div class="social-media">
-						<a href="https://github.com/Erickwi" target="_blank" ><i
-								class='fab fa-github'></i></a>
-						<a href="https://www.instagram.com/erick_.ramirez/" target="_blank" 
-							><i class='fab fa-instagram'></i></a>
-						<a href="#" target="_blank" ><i class='fab fa-linkedin-in'></i></a>
+						<a href="https://github.com/Erickwi" target="_blank">
+							<i class='fab fa-github fa-2x'></i>
+						</a>
+						<a href="https://www.instagram.com/erick_.ramirez/" target="_blank">
+							<i class='fab fa-instagram fa-2x'></i>
+						</a>
+						<a href="https://www.linkedin.com/in/erick-ram%C3%ADrez-ortiz-8b02001b0/" target="_blank">
+							<i class='fab fa-linkedin-in fa-2x'></i>
+						</a>
+						<a href="mailto:electrictiesto@gmail.com?Subject=Interesado%20en%20Colaborar">
+							<i class="fa fa-envelope fa-2x"></i>
+						</a>
 					</div>
 				</section>
 			</div>
@@ -66,77 +77,89 @@
 			<div id="about">
 				<div class="filter"></div>
 				<section class="intro">
-					<div >
+					<div>
 						<h3>Sobre Mí</h3>
 					</div>
 					<hr>
-					<p >Ingeniero de Software con una apasionada inclinación hacia todo
-						lo relacionado con la tecnología. Comprometido con la búsqueda constante de aprendizaje para perfeccionar
+					<p>Ingeniero de Software con una apasionada inclinación hacia todo
+						lo relacionado con la tecnología. Comprometido con la búsqueda constante de aprendizaje para
+						perfeccionar
 						mis habilidades en programación y edición de video</p>
-					<div >
-						<h4>Cursos y Conocimientos</h4>
+
+					<div class="cursos_contenedor" id="courses">
+						<div class="title">
+							<h4>Cursos</h4>
+						</div>
+						<hr>
+						<div class="cursos_grid">
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/google_activate_logo.jpg" alt="google activate logo">
+									<img src="./img/INCIBE.png"
+										style="filter: drop-shadow(0 0 15px var(--main-decor-color));">
+								</div>
+								<p>Ciberseguridad en el Teletrabajo</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/google_activate_logo.jpg" alt="google activate logo">
+									<img src="./img/logo-ua.jpg">
+								</div>
+								<p>Introducción al Desarrollo Web I</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/google_activate_logo.jpg" alt="google activate logo">
+									<img src="./img/logo_ucm.png"
+										style="filter: drop-shadow(0 0 15px var(--main-decor-color));">
+								</div>
+								<p>Desarrollo de Apps Móviles</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/Cisco_Systems.png" alt="Cisco Systems">
+								</div>
+								<p>Curso Networking Essentials de Cisco Networking Academy®</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/hplife.png" alt="HP LIFE">
+								</div>
+								<p>HP LIFE - IA para principiantes</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/aws_educate.png" alt="AWS Educate">
+								</div>
+								<p>Amazon Educate - Introducción a la Nube 101</p>
+							</div>
+						</div>
 					</div>
-					<hr>
-					<div class="cursos_contenedor">
-						<div class="cursos_contenedor_int">
-							<div>
-								<img src="./img/google_activate_logo.jpg" alt="google activate logo">
-								<img src="./img/INCIBE.png" style="filter: drop-shadow(0 0 15px var(--main-decor-color));">
-							</div>
-							<p>Ciberseguridad en el Teletrabajo</p>
+					<div class="conocimientos_contenedor" id="knowledge">
+						<div class="title">
+							<h4>Conocimientos</h4>
+							<hr>
 						</div>
-						<div class="cursos_contenedor_int">
-							<div>
-								<img src="./img/google_activate_logo.jpg" alt="google activate logo">
-								<img src="./img/logo-ua.jpg">
-							</div>
-							<p>Introducción al Desarrollo Web I</p>
+						<div class="conocimientos_int">
+							<img src="icons_programming/react.png">
+							<img src="icons_programming/c++_logo_icon.png">
+							<img src="icons_programming/CSharp.svg.png" style="width: 50px;">
+							<img src="icons_programming/css_logo_icon.png">
+							<img src="icons_programming/html_logo_icon.png">
+							<img src="icons_programming/java_logo_icon.png">
+							<img src="icons_programming/NodeJS.png" style="width: 125px;">
+							<img src="icons_programming/Vitest.svg">
+							<img src="icons_programming/jquery_logo_icon.svg">
+							<img src="icons_programming/js_logo_icon.png">
+							<img src="icons_programming/mysql_logo_icon.png">
+							<img src="icons_programming/PostgreSQL.png" style="width: 200px;">
+							<img src="icons_programming/SQLite.png" style="width: 200px;">
+							<img src="icons_programming/MongoDB.png" style="width: 200px;">
+							<img src="icons_programming/php_logo_icon.png">
+							<img src="icons_programming/python_logo_icon.png">
+							<img src="icons_programming/r_logo_icon.png">
+							<img src="icons_programming/excel_logo_icon.png">
 						</div>
-						<div class="cursos_contenedor_int">
-							<div>
-								<img src="./img/google_activate_logo.jpg" alt="google activate logo">
-								<img src="./img/logo_ucm.png" style="filter: drop-shadow(0 0 15px var(--main-decor-color));">
-							</div>
-							<p>Desarrollo de Apps Móviles</p>
-						</div>
-						<div class="cursos_contenedor_int">
-							<div>
-								<img src="./img/Cisco_Systems.png" alt="Cisco Systems">
-							</div>
-							<p>Curso Networking Essentials de Cisco Networking Academy®</p>
-						</div>
-						<div class="cursos_contenedor_int">
-							<div>
-								<img src="./img/hplife.png" alt="HP LIFE">
-							</div>
-							<p>HP LIFE - IA para principiantes</p>
-						</div>
-						<div class="cursos_contenedor_int">
-							<div>
-								<img src="./img/aws_educate.png" alt="AWS Educate">
-							</div>
-							<p>Amazon Educate - Introducción a la Nube 101</p>
-						</div>
-					</div>
-					<div class="conocimientos_contenedor">
-						<img src="icons_programming/react.png">
-						<img src="icons_programming/c++_logo_icon.png">
-						<img src="icons_programming/CSharp.svg.png" style="width: 50px;">
-						<img src="icons_programming/css_logo_icon.png">
-						<img src="icons_programming/html_logo_icon.png">
-						<img src="icons_programming/java_logo_icon.png">
-						<img src="icons_programming/NodeJS.png"  style="width: 125px;">
-						<img src="icons_programming/Vitest.svg">
-						<img src="icons_programming/jquery_logo_icon.svg">
-						<img src="icons_programming/js_logo_icon.png">
-						<img src="icons_programming/mysql_logo_icon.png">
-						<img src="icons_programming/PostgreSQL.png"  style="width: 200px;">
-						<img src="icons_programming/SQLite.png"  style="width: 200px;">
-						<img src="icons_programming/MongoDB.png" style="width: 200px;">
-						<img src="icons_programming/php_logo_icon.png">
-						<img src="icons_programming/python_logo_icon.png">
-						<img src="icons_programming/r_logo_icon.png">
-						<img src="icons_programming/excel_logo_icon.png">
 					</div>
 				</section>
 			</div>
@@ -200,80 +223,105 @@
 						<div data-vtdate="Proyecto vinculación con la sociedad - ACNUR (2023)">
 							<b>Estudiante de Apoyo - Departamento Cursos MOOC</b>
 							<ul>
-								<li>Desarrollé la interfaz de usuario con React para la tienda en línea de Prowess MOOC.</li>
+								<li>Desarrollé la interfaz de usuario con React para la tienda en línea de Prowess MOOC.
+								</li>
 							</ul>
 						</div>
 						<div data-vtdate="Prácticas Pre profesionales - Softevo S.A (2024)">
 							<b>Practicante - Departamento de operaciones</b>
 							<ul>
-								<li>Desarrollo de diferentes módulos para la app de registro, control e informe de actividades de los desarrolladores. Usando Java con React y gestionando los datos con PostgreSQL.</li>
+								<li>Desarrollo de diferentes módulos para la app de registro, control e informe de
+									actividades de los desarrolladores. Usando Java con React y gestionando los datos
+									con PostgreSQL.</li>
 							</ul>
 						</div>
 					</div>
-					<p data-aos="zoom-out-up" data-aos-delay="300"></p>
-					<p data-aos="zoom-out-up" data-aos-delay="400"></p>
-					<p data-aos="zoom-out-up" data-aos-delay="500"></p>
 				</section>
 			</div>
 
 
 
-			<!--───────────────Projects───────────────
-		USAR ANIMACIONES PARA LAS TARJETAS Y USAR HOVER PARA DARLE HACERLO MAS DINAMISMO AL PORTAFOLIO
-		-->
+			<!--───────────────Projects───────────────-->
 			<div id="projects">
-				<h3 >Mis Proyectos
+				<h3>Mis Proyectos
 					<hr>
 				</h3>
-				<p>Unos cuantos proyectos que he desarrollado tanto personales a lo largo de mis estudios universitarios como
+				<p>Unos cuantos proyectos que he desarrollado tanto personales a lo largo de mis estudios universitarios
+					como
 					para pequeñas empresas, emprendimientos</p>
 				<div class="work-box">
 					<div class="work">
 						<!--───────────────Tarjetas───────────────-->
-						<div class="card" >
+						<figure class="card c4-izmir c4-border-ccc-3 c4-gradient-top"
+							style="--primary-color: #f99430; --secondary-color: #ffb56c; --border-width: 3px;">
 							<img class="work-img" src="./img/PORTADAPILAS.png">
-							<a href="https://pontepilas-70f99.web.app/" target="_blank">
+							<figcaption>
 								<!--Link to project-->
-								<div class="work-content">Ponte Pilas 💡</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img" src="./img/LOGOBOCADITOS.png">
-							<a href="https://portfolio-bocaditos.lrjd4i.easypanel.host/" target="_blank">
-								<!--Link to project->-->
-								<div class="work-content">Bocaditos
-									<br>La Guaragua
+								<div class="c4-fade-up">
+									<p style="color: black;font-weight:600;">Ponte Pilas</p>
+									<a href="https://pontepilas-70f99.web.app/" target="_blank">
+										<button>Ver proyecto</button>
+									</a>
 								</div>
-							</a>
-						</div>
-						<div class="card">
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top"
+							style="--primary-color: #2e2e2e; --secondary-color: #ff6c6c; --border-width: 3px;">
+							<img class="work-img" src="./img/LOGOBOCADITOS.png">
+							<figcaption>
+								<!--Link to project->-->
+								<div class="c4-fade-up">Bocaditos La Guaragua
+									<a href="https://portfolio-bocaditos.lrjd4i.easypanel.host/" target="_blank">+
+										<button>Ver proyecto</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top"
+							style="--primary-color: #2e2e2e; --secondary-color: #ffb56c; --border-width: 3px;">
 							<img class="work-img" src="./img/innovaGenius.jpg">
-							<a href="https://portfolio-inventario.lrjd4i.easypanel.host/" target="_blank">
+							<figcaption>
 								<!--Link to project->-->
-								<div class="work-content">Proyecto<br>Inventario-Inmobiliaria</div>
-							</a>
-						</div>
-						<div class="card">
+								<div class="c4-fade-up">Proyecto Inventario Inmobiliaria
+									<a href="https://portfolio-inventario.lrjd4i.easypanel.host/" target="_blank">
+										<button>Ver proyecto</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top">
 							<img class="work-img" src="./img/iconToursEcuador.png">
-							<a href="https://portfolio-tours-ecuador.lrjd4i.easypanel.host/" target="_blank">
+							<figcaption>
 								<!--Link to project->-->
-								<div class="work-content">Tours Ecuador</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img" src="./img/muyPronto.png">
-							<a href="https://portfolio-registro-caja.lrjd4i.easypanel.host/" target="_blank">
+								<div class="c4-fade-up">Tours Ecuador
+									<a href="https://portfolio-tours-ecuador.lrjd4i.easypanel.host/" target="_blank">
+										<button>Ver proyecto</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top"
+							style="--primary-color: #053698; --border-width: 3px;">
+							<!-- <img class="work-img" src="./img/muyPronto.png"> -->
+							<figcaption>
 								<!--Link to project->-->
-								<div class="work-content">Proyecto de Grado</div>
-							</a>
-						</div>
-						<div class="card">
+								<div class="c4-fade-up">Proyecto de Grado
+									<p style="font-weight: bold;">Proximamente</p>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top"
+							style="--primary-color:rgb(0, 142, 45); --secondary-color: #68c46a; --border-width: 3px;">
 							<img class="work-img" src="./img/cashflow.png">
-							<a href="https://portfolio-registro-caja.lrjd4i.easypanel.host/" target="_blank">
+							<figcaption>
 								<!--Link to project->-->
-								<div class="work-content">CashFlow</div>
-							</a>
-						</div>
+								<div class="c4-fade-up">CashFlow
+									<a href="https://portfolio-registro-caja.lrjd4i.easypanel.host/" target="_blank">
+										<button>Ver proyecto</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
 					</div>
 				</div>
 			</div>
@@ -281,23 +329,31 @@
 			<!--──────────────Contacto────────────────-->
 			<div id="contact">
 				<!--────social media links─────-->
-				<h3 >Contacto</h3>
+				<h3>Contacto</h3>
 				<hr>
-				<p >Si quieres ponerte en contacto conmigo aqui te dejo varios medios
+				<p>Si quieres ponerte en contacto conmigo aqui te dejo varios medios
 				</p>
 				<div class="social-media">
-					<a href="https://github.com/Erickwi" target="_blank"><i
-							class='fab fa-github'></i></a>
-					<a href="https://www.instagram.com/erick_.ramirez/" target="_blank" ><i
-							class='fab fa-instagram'></i></a>
-					<a href="#" target="_blank" ><i class='fab fa-linkedin-in'></i></a>
+					<a href="https://github.com/Erickwi" target="_blank">
+						<i class='fab fa-github fa-2x'></i>
+					</a>
+					<a href="https://www.instagram.com/erick_.ramirez/" target="_blank">
+						<i class='fab fa-instagram fa-2x'></i>
+					</a>
+					<a href="https://www.linkedin.com/in/erick-ram%C3%ADrez-ortiz-8b02001b0/" target="_blank">
+						<i class='fab fa-linkedin-in fa-2x'></i>
+					</a>
+					<a href="mailto:electrictiesto@gmail.com?Subject=Interesado%20en%20Colaborar">
+						<i class="fa fa-envelope fa-2x"></i>
+					</a>
 				</div>
 			</div>
+	</div>
 
-		</main>
-		<footer class="copyright">©
-			<script> document.write(new Date().getFullYear());</script> Erick Ramírez
-		</footer>
+	</main>
+	<footer class="copyright">©
+		<script> document.write(new Date().getFullYear());</script> Erick Ramírez
+	</footer>
 
 	</div>
 	<script src="./js/vertical-timeline.min.js"></script>

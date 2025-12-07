@@ -41,7 +41,8 @@ header {
 	z-index: 5;
 }
 
-header:hover,.nav-show {
+header:hover,
+.nav-show {
 	opacity: 1;
 	background: var(--main-header-background);
 }
@@ -83,14 +84,14 @@ a.nav-link {
        home
 ──────────────────*/
 
-.imgPerfil{
+.imgPerfil {
 	transform: scale(1.0);
-	transition: 0.5s;	
+	transition: 0.5s;
 }
 
-.imgPerfil:hover{
+.imgPerfil:hover {
 	transform: scale(1.1);
-	transition: 0.5s;	
+	transition: 0.5s;
 }
 
 #home {
@@ -130,7 +131,7 @@ a.nav-link {
 	text-align: center;
 }
 
-h3{
+h3 {
 	padding-bottom: 15px;
 	letter-spacing: normal;
 	font-family: var(--main-font-family);
@@ -140,12 +141,12 @@ h3{
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
 
-h4{
+h4 {
 	letter-spacing: normal;
 	font-family: var(--main-font-family);
 	font-style: normal;
 	padding-bottom: 15px;
-	font-size:30px;
+	font-size: 30px;
 	color: var(--main-fonts-color);
 	text-shadow: 0px 0px 40px var(--main-decor-color);
 }
@@ -161,6 +162,7 @@ h4{
 	position: center;
 	align-items: space-around;
 	justify-content: center;
+	gap: 20px;
 }
 
 .social-media a {
@@ -169,6 +171,7 @@ h4{
 	text-align: center;
 	display: inline-block;
 	color: var(--main-fonts-color);
+	transition: 1s;
 }
 
 .social-media a i {
@@ -185,33 +188,49 @@ h4{
 			Estudios y cursos
 ──────────────────*/
 
-.cursos_contenedor, .conocimientos_contenedor{
+.cursos_contenedor .title {
+	margin-top: 50px !important;
+}
+
+.conocimientos_int {
 	display: flex;
-	gap:15px;
+	gap: 15px;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
 	margin-top: 20px;
 }
 
-.cursos_contenedor img{
+.cursos_grid {
+	display: flex;
+	gap: 15px;
+	justify-content: space-evenly;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.cursos_contenedor img {
 	width: 100px;
 	height: auto;
 }
 
-.conocimientos_contenedor img{
+.conocimientos_contenedor .conocimientos_int img {
 	width: 75px;
 	height: auto;
 }
 
-.cursos_contenedor_int div{
-	display:flex;
-	gap:20px;
-	flex-direction:row;	
+.cursos_contenedor_int div {
+	display: flex;
+	gap: 20px;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
+.conocimientos_contenedor {
+	margin-top: 100px;
+}
 
 /*──────────────────
 			Habilidades
@@ -227,17 +246,29 @@ ul {
 			Experiencia
 ──────────────────*/
 
-.myTimeline{
+.myTimeline {
 	width: 90%;
 }
 
-.vtimeline-content{
-	padding:20px;
-	text-align: justify;
-	color:black!important;
+.vtimeline:before,
+.vtimeline-icon {
+	background: var(--main-decor-color) !important;
 }
 
-.vtimeline-block{
+.vtimeline-date {
+	font-weight: 700;
+	font-size: 18px !important;
+	color: var(--main-decor-color) !important;
+	text-shadow: 0px 0px 37px #dbdbdb !important;
+}
+
+.vtimeline-content {
+	padding: 20px;
+	text-align: justify;
+	color: black !important;
+}
+
+.vtimeline-block {
 	box-shadow: 0 0 15px var(--main-decor-color);
 }
 
@@ -246,7 +277,7 @@ ul {
 ──────────────────*/
 
 #projects {
-	margin-top: 100px;
+	margin-top: 50px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -256,17 +287,13 @@ ul {
 	color: var(--main-fonts-color);
 }
 
-#projects h3 {
-	padding-top: 70px;
-}
-
 #projects p {
 	font-family: var(--main-font-family);
 	font-size: 1.2rem;
 	padding: 10px;
 }
 
-.work-box{
+.work-box {
 	width: 100%;
 }
 
@@ -276,6 +303,7 @@ ul {
 	justify-content: center;
 	align-items: center;
 	padding: 20px;
+	gap: 20px;
 }
 
 .card {
@@ -291,9 +319,9 @@ ul {
 }
 
 .card img {
-	object-fit: cover;
 	width: 100%;
-	height: 70%;
+	height: 100%;
+	object-fit: cover;
 	border-radius: 10px 10px 0px 0px;
 }
 
@@ -317,6 +345,25 @@ ul {
 .card:hover {
 	box-shadow: 0 0 1.5rem gray;
 	transition: box-shadow 0.7s !important;
+}
+
+.card figcaption div {
+	font-weight: 800;
+}
+
+.card figcaption .c4-fade-up button {
+	margin-top: 10px;
+	padding: 8px;
+	background-color: var(--main-decor-color);
+	color: white;
+	border: none;
+	border-radius: 7px;
+}
+
+.card figcaption .c4-fade-up button:hover {
+	box-shadow: 0 0 1.5rem white;
+	scale: 110%;
+	cursor: pointer;
 }
 
 /*──────────────────
@@ -444,13 +491,11 @@ hr {
     media queries
 ──────────────────*/
 
-@media only screen and (max-width: 799px) and (min-width: 600px) {
+@media only screen and (max-width: 999px) and (min-width: 500px) {
 	.work {
 		flex-wrap: wrap;
 	}
 }
-
-
 
 @media only screen and (max-width: 500px) {
 
