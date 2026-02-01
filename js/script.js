@@ -36,4 +36,3 @@ const navSlide = () => {
 
 window.onload = () => navSlide();
 
-//Timeline

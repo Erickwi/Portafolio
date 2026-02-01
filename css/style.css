@@ -67,6 +67,7 @@ a.nav-link {
 	font-family: var(--main-font-family);
 	cursor: pointer;
 	text-transform: uppercase;
+	transition: 1s;
 }
 
 .active {
@@ -192,15 +193,6 @@ h4 {
 	margin-top: 50px !important;
 }
 
-.conocimientos_int {
-	display: flex;
-	gap: 15px;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-top: 20px;
-}
-
 .cursos_grid {
 	display: flex;
 	gap: 15px;
@@ -215,17 +207,31 @@ h4 {
 	height: auto;
 }
 
-.conocimientos_contenedor .conocimientos_int img {
-	width: 75px;
-	height: auto;
-}
-
 .cursos_contenedor_int div {
 	display: flex;
 	gap: 20px;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+.amazon_img {
+	width: 180px !important;
+}
+
+.conocimientos_int {
+	display: flex;
+	gap: 25px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.conocimientos_int .marquee img {
+	width: 75px;
+	height: auto;
+	padding: 0px 10px;
 }
 
 .conocimientos_contenedor {

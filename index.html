@@ -11,6 +11,10 @@
 	<link href="./css/vertical-timeline.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="./js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Sean-93/newmarquee@v0.9.1/dist/newmarquee-min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -58,16 +62,16 @@
 
 					<div class="social-media">
 						<a href="https://github.com/Erickwi" target="_blank">
-							<i class='fab fa-github fa-2x'></i>
+							<i class='fab fa-github fa-2x' title="GitHub: Erickwi"></i>
 						</a>
 						<a href="https://www.instagram.com/erick_.ramirez/" target="_blank">
-							<i class='fab fa-instagram fa-2x'></i>
+							<i class='fab fa-instagram fa-2x' title="Instagram: erick_.ramirez"></i>
 						</a>
 						<a href="https://www.linkedin.com/in/erick-ram%C3%ADrez-ortiz-8b02001b0/" target="_blank">
-							<i class='fab fa-linkedin-in fa-2x'></i>
+							<i class='fab fa-linkedin-in fa-2x' title="LinkedIn"></i>
 						</a>
 						<a href="mailto:electrictiesto@gmail.com?Subject=Interesado%20en%20Colaborar">
-							<i class="fa fa-envelope fa-2x"></i>
+							<i class="fa fa-envelope fa-2x" title="Escríbeme via email"></i>
 						</a>
 					</div>
 				</section>
@@ -123,13 +127,43 @@
 							</div>
 							<div class="cursos_contenedor_int">
 								<div>
+									<img src="./img/Platzi_Logo.webp" alt="Platzi_Logo">
+								</div>
+								<p>Taller de Ciberseguridad para Prevenir Ataques Informáticos</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/Platzi_Logo.webp" alt="Platzi_Logo">
+								</div>
+								<p>Curso de pentesting con Metasploit</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/Platzi_Logo.webp" alt="Platzi_Logo">
+								</div>
+								<p>Curso de Vite.js</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/Logo-Academia.png" alt="Kleer Academia">
+								</div>
+								<p>Agilidad y Scrum</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
+									<img src="./img/Alaimo Labs.png" alt="Alaimo Labs">
+								</div>
+								<p>Fundamentos de Scrum</p>
+							</div>
+							<div class="cursos_contenedor_int">
+								<div>
 									<img src="./img/hplife.png" alt="HP LIFE">
 								</div>
 								<p>HP LIFE - IA para principiantes</p>
 							</div>
 							<div class="cursos_contenedor_int">
 								<div>
-									<img src="./img/aws_educate.png" alt="AWS Educate">
+									<img src="./img/aws_educate.png" class="amazon_img" alt="AWS Educate">
 								</div>
 								<p>Amazon Educate - Introducción a la Nube 101</p>
 							</div>
@@ -141,24 +175,26 @@
 							<hr>
 						</div>
 						<div class="conocimientos_int">
-							<img src="icons_programming/react.png">
-							<img src="icons_programming/c++_logo_icon.png">
-							<img src="icons_programming/CSharp.svg.png" style="width: 50px;">
-							<img src="icons_programming/css_logo_icon.png">
-							<img src="icons_programming/html_logo_icon.png">
-							<img src="icons_programming/java_logo_icon.png">
-							<img src="icons_programming/NodeJS.png" style="width: 125px;">
-							<img src="icons_programming/Vitest.svg">
-							<img src="icons_programming/jquery_logo_icon.svg">
-							<img src="icons_programming/js_logo_icon.png">
-							<img src="icons_programming/mysql_logo_icon.png">
-							<img src="icons_programming/PostgreSQL.png" style="width: 200px;">
-							<img src="icons_programming/SQLite.png" style="width: 200px;">
-							<img src="icons_programming/MongoDB.png" style="width: 200px;">
-							<img src="icons_programming/php_logo_icon.png">
-							<img src="icons_programming/python_logo_icon.png">
-							<img src="icons_programming/r_logo_icon.png">
-							<img src="icons_programming/excel_logo_icon.png">
+							<new-marquee class="marquee" speed="60" direction="left" pauseonhover="true">
+								<img src="icons_programming/react.png">
+								<img src="icons_programming/c++_logo_icon.png">
+								<img src="icons_programming/CSharp.svg.png">
+								<img src="icons_programming/css_logo_icon.png">
+								<img src="icons_programming/html_logo_icon.png">
+								<img src="icons_programming/java_logo_icon.png">
+								<img src="icons_programming/NodeJS.png">
+								<img src="icons_programming/Vitest.svg">
+								<img src="icons_programming/jquery_logo_icon.svg">
+								<img src="icons_programming/js_logo_icon.png">
+								<img src="icons_programming/mysql_logo_icon.png">
+								<img src="icons_programming/PostgreSQL.png">
+								<img src="icons_programming/SQLite.png">
+								<img src="icons_programming/MongoDB.png">
+								<img src="icons_programming/php_logo_icon.png">
+								<img src="icons_programming/python_logo_icon.png">
+								<img src="icons_programming/r_logo_icon.png">
+								<img src="icons_programming/excel_logo_icon.png">
+							</new-marquee>
 						</div>
 					</div>
 				</section>
@@ -271,7 +307,7 @@
 							<figcaption>
 								<!--Link to project->-->
 								<div class="c4-fade-up">Bocaditos La Guaragua
-									<a href="https://portfolio-bocaditos.lrjd4i.easypanel.host/" target="_blank">+
+									<a href="https://portfolio-bocaditos.lrjd4i.easypanel.host/" target="_blank">
 										<button>Ver proyecto</button>
 									</a>
 								</div>
@@ -325,6 +361,73 @@
 					</div>
 				</div>
 			</div>
+			<!-- Projects Tiktok -->
+
+			<div id="projects">
+				<h3>Proyectos como Creador de Contenido
+					<hr>
+				</h3>
+				<p>También como un pasatiempo me he dedicado a la creación de contenido tanto para proyectos personales
+					como de amigos o emprendimientos. Muchos de ellos han buscado la forma de como hacer mejor
+					contenido, buscando calidad antes que cantidad</p>
+				<div class="work-box">
+					<div class="work">
+						<!--───────────────Tarjetas───────────────-->
+						<figure class="card c4-izmir c4-border-ccc-3 c4-gradient-top"
+							style="--primary-color: #f99430; --secondary-color: #ffb56c; --border-width: 3px;">
+							<img class="work-img" src="./img/PORTADAPILAS.png">
+							<figcaption>
+								<!--Link to project-->
+								<div class="c4-fade-up">
+									<p style="color: black;font-weight:600;">Ponte Pilas</p>
+									<a href="https://www.tiktok.com/@pilasoficial" target="_blank">
+										<button>Ver TikTok</button>
+									</a>
+									<a href="https://www.instagram.com/pilasoficial/" target="_blank">
+										<button>Ver Instagram</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top"
+							style="--primary-color: #2e2e2e; --secondary-color: #ff6c6c; --border-width: 3px;">
+							<img class="work-img" src="./img/LOGOBOCADITOS.png">
+							<figcaption>
+								<!--Link to project->-->
+								<div class="c4-fade-up">Bocaditos La Guaragua
+									<a href="https://www.tiktok.com/@debocadoenbocado" target="_blank">
+										<button>TikTok</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top"
+							style="--primary-color: #2e2e2e; --secondary-color: #2fe3f4; --border-width: 3px;">
+							<img class="work-img" src="./img/dlayoni.png">
+							<figcaption>
+								<!--Link to project->-->
+								<div class="c4-fade-up">Dlayoni
+									<a href="https://www.tiktok.com/@dlayoni" target="_blank">
+										<button>Ver TikTok</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
+						<figure class="card c4-izmir c4-border-ccc-2 c4-gradient-top"
+							style="--primary-color: #3381e7; --secondary-color: #ff8ce4;">
+							<img class="work-img" src="./img/growwithme.jpg">
+							<figcaption>
+								<!--Link to project->-->
+								<div class="c4-fade-up">Grow with Me
+									<a href="https://www.tiktok.com/@grow.with.me961" target="_blank">
+										<button>Ver TikTok</button>
+									</a>
+								</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
 
 			<!--──────────────Contacto────────────────-->
 			<div id="contact">
@@ -335,16 +438,16 @@
 				</p>
 				<div class="social-media">
 					<a href="https://github.com/Erickwi" target="_blank">
-						<i class='fab fa-github fa-2x'></i>
+						<i class='fab fa-github fa-2x' title="GitHub: Erickwi"></i>
 					</a>
 					<a href="https://www.instagram.com/erick_.ramirez/" target="_blank">
-						<i class='fab fa-instagram fa-2x'></i>
+						<i class='fab fa-instagram fa-2x' title="Instagram: erick_.ramirez"></i>
 					</a>
 					<a href="https://www.linkedin.com/in/erick-ram%C3%ADrez-ortiz-8b02001b0/" target="_blank">
-						<i class='fab fa-linkedin-in fa-2x'></i>
+						<i class='fab fa-linkedin-in fa-2x' title="LinkedIn"></i>
 					</a>
 					<a href="mailto:electrictiesto@gmail.com?Subject=Interesado%20en%20Colaborar">
-						<i class="fa fa-envelope fa-2x"></i>
+						<i class="fa fa-envelope fa-2x" title="Escríbeme via email"></i>
 					</a>
 				</div>
 			</div>
@@ -364,6 +467,13 @@
 			alternate: true,
 			animate: "fade",
 			arrows: true
+		});
+
+		//Tooltip
+		$(function () {
+			$(document).tooltip({
+				track: true
+			});
 		});
 	</script>
 </body>
